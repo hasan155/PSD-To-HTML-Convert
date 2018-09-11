@@ -1,0 +1,167 @@
+/*		Default Layout: 980px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+*/
+.container{
+	width:980px;
+	display:block;
+	margin:0 auto;
+}
+.single_post_wrapper img{
+	max-width:100%;
+	height:auto;
+}	
+
+.selectnav{
+	display:none;
+}
+
+
+
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+.container{
+	width:95%;
+}	
+.left_content{
+	width: 63%;	
+	margin-right:2%;
+}	
+#sidebar{
+	width: 33%;
+}
+
+#header>nav #menu{
+	display:none;
+}
+.selectnav{
+	display:block;
+}
+
+	
+
+}
+
+
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+*/
+
+@media only screen and (max-width: 767px) {
+	
+.container{
+	width:98%;
+}	
+.left_content{
+	width: 100%;	
+}	
+#sidebar{
+	width:100%;
+}
+
+#sidebar .single_sidebar .search_box{
+	float:left;
+	border-right:1px solid #E1E0E0;
+}
+.left_content .single_post_wrapper img{
+	width:100%;
+	height:100%;
+}	
+
+#header>nav #menu{
+	display:none;
+}
+.selectnav{
+	display:block;
+}
+
+
+
+	
+	
+}
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+.container{
+	width:98%;
+}	
+.left_content{
+	width: 100%;	
+}	
+#sidebar{
+	width: 100%;
+}
+
+#header>nav #menu{
+	display:none;
+}
+.selectnav{
+	display:block;
+}
+
+	
+
+}
+
+
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+		
+.container{
+	width:98%;
+}	
+.left_content{
+	width: 100%;	
+}	
+#sidebar{
+	width: 100%;
+}
+#header>nav #menu{
+	display:none;
+}
+.selectnav{
+	display:block;
+}
+
+
+
+		
+		
+	
+}
